@@ -5,9 +5,9 @@ curl_setopt_array($ch, [
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_FOLLOWLOCATION => true,
     CURLOPT_POSTFIELDS => http_build_query([
-                  "recipient" => "$_POST['recipient']",
+                  "recipient" => "zoonashhassan@gmail.cpm",
                   "subject"   => "Dairy Datazen Password Reset",
-                  "body"      => $_POST['body']
+                  "body"      => "test"
         ])
     ]);
 $result = curl_exec($ch);
